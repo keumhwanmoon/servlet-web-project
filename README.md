@@ -20,3 +20,8 @@
             <scope>provided</scope>
         </dependency>
 ```
+
+## Run
+``` shell
+$ tomcat7:run
+```
