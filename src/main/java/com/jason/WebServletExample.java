@@ -13,10 +13,11 @@ import java.io.PrintWriter;
  * @since 2016. 10. 24.
  */
 @WebServlet(value = "/example")
-public class WebServletIndex extends HttpServlet {
+public class WebServletExample extends HttpServlet {
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        PrintWriter out = resp.getWriter();
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+
+        PrintWriter out = res.getWriter();
         out.write("Example servlet 3 annotation example configuration");
     }
 
